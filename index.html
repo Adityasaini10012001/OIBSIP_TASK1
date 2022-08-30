@@ -1,69 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>starbucks coffee company</title>
 </head>
 <body>
-
-    <div class="container">
-        <div class="display">
-            <input id="screen" type="text" placeholder="0">
+   <nav class="navbar">
+   <div class="navbar-container">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="https://www.freepnglogos.com/uploads/starbucks-logo-png-transparent-0.png" alt="Starbucks">
+            </a>
         </div>
 
-        <div class="btns">
-            <div class="row">
-                <button id="ce" onclick="backspc()">CE</button>
-                <button onclick="fact()">x!</button>
-                <button class="btn">(</button>
-                <button class="btn">)</button>
-                <button class="btn">%</button>
-                <button id="ac" onclick="screen.value=''">AC</button>
-            </div>
+        <ul class="navbar-nav-left">
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Rewards</a>
+            </li>
+            <li>
+                <a href="#">Gift Cards </a>
+                </li>
+                <li>
+                    <a href="#social">contact</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+        </ul>
 
-            <div class="row">
-                <button onclick="sin()">sin</button>
-                <button onclick="pi()">π</button>
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">÷</button>
-            </div>
+        <ul class="navbar-nav-right">
+            <li>
+            <a href="#">
+                <img src="https://www.clipartmax.com/png/middle/151-1511820_find-your-nearest-store-complete-with-address-and-location-symbol.png" alt="">
+                <span>Find a store</span>
+            </a>
+            </li>
+            <li><button class="btn btn-dark-outline">Sign in</button></li>
+            <li><button class="btn btn-dark">join now</button></li>
+        </ul>
 
-            <div class="row">
-                <button onclick="cos()">cos</button>
-                <button onclick="log()">log</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">×</button>
-            </div>
+        <!--Hamburger Menu-->
+        <button type="button" class="hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-top"></span>
+    </button>
+    </div>
+      </nav>
 
-            <div class="row">
-                <button onclick="tan()">tan</button>
-                <button onclick="sqrt()">√</button>
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">-</button>
-            </div>
+      <!-- Mobile Menu-->
+<div class="mobie-menu hidden" id="menu"> 
+    <ul>
+        <li>
+            <a href="#">Menu</a>
+        </li>
+        <li>
+            <a href="#">Rewards</a>
+        </li>
+        <li>
+            <a href="#">Gift Cards </a>
+            </li>
 
-            <div class="row">
-                <button onclick="e()">e</button>
-                <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
-                </button>
-                <button class="btn">0</button>
-                <button class="btn">.</button>
-                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
-                <button class="btn">+</button>
-            </div>
+    </ul>
+
+    <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign in</button>
+        <button class="btn btn-dark">join now</button>
+        <div>
+            <a href="#"> 
+                <img src="img/marker.svg" alt="">
+                <span>Find a store</span>
+            </a>   
         </div>
     </div>
-    <script src="script.js"></script>
+</div>
+<div class="search box">
+    <input type="text" class="search-text"placeholder="search">
+    <a href="#" class="search-btn">
+        <i class="fa-brands fa-searchengin"></i>
+    </a>
+   </div>
+
+   <!--Box A-->
+<section class="box box-a bg-primary text-center py-md">
+    <div class="box-inner">
+        <h2 class="text-tl">Starbucks represents something beyond a cup of coffee</h2>
+        <p class="text-md">
+            join Starbucks Rewards for delicious deals & exclusive offers.
+            <a href="#">Learn more</a>
+        </p>
+    </div>
+    </section
+
+    <!--Box B-->
+    <section class="box box-b bg-primary grid-col-2">
+        <img src="https://c1.wallpaperflare.com/preview/243/892/859/starbucks-coffee-coffee-to-go-iced-coffee.jpg" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">new to the nice list</h2>
+            <p class="text-md"> Here the iced coffee latte</p> 
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>    
+    </section>
+
+    <!--Box C-->
+    <section class="box box-c bg-primary grid-col-2 grid-reverse">
+        <img src="https://www.rappler.com/tachyon/2021/11/251348491_10161683018132925_3332179234883230496_n.jpeg?resize=960%2C960&zoom=1" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Merry moment</h2>
+            <p class="text-md">  Treat yourself to a festive sugar plum cheese danish with a nicely</p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>    
+    </section>
+
+    <!--Box D-->
+    <section class="box box-d bg-primary grid-col-2">
+        <img src="https://stories.starbucks.com/_next/image/?url=https%3A%2F%2Fstories.starbucks.com%2Fuploads%2F2019%2F01%2FStarbucks_Thanksgiving_Blend_2015-1024x731.jpg&w=1080&q=75" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Starbucks Thanksgiving Blend</h2>   
+            <p class="text-md"> My couch is coffee-coloured. I can thank starbucks and clumsiness for that</p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>    
+    </section>
+
+    <!--Delivery-->
+    <section class="delivery" id="delivery">
+     <div class="heading">
+        <span>Get Now</span>
+        <h1>Order With Uber Eats</h1>
+     </div>
+    <section class="box box-delivery bg-primary grid-col-2">
+        <img src="https://d35dyn0jtrhde0.cloudfront.net/images/ubereats_tray_short-d65b2269e406569b305b92b4bc21462c.jpg?vsn=d" alt="">
+        <div class="delivery-text">
+            <h2 class="today deserve delivery"></h2>
+            <p class="text-md">Starbucks Delivers is available on Uber Eats in select markets in the India.</p>
+            <a href="#" class="btn btn-light-outline">Order Now</a>
+        </div>
+    </section>
+    <!--Get App-->
+    <section class="app" id="app"> 
+        <div class="heading">
+            <span>Our App</span>
+            <h1>Download App</h1>
+          </div>
+           <section class="box box-app bg-primary grid-col-2">
+            <img src="https://cdn.dribbble.com/users/2461181/screenshots/7151279/media/923050035b0c4b7a636482164f068cd3.jpg?compress=1&resize=1000x750&vertical=top" alt="">
+            <div class="App-text">           
+                <h2 class="today deserve delivery"></h2>
+                <p class="text-md">our starbucks india mobile app lets you conveniently pay by phone for purchase,earn stars and redeem rewards with My Starbucks Rewards</p>
+                 <a href="#" class="btn btn-light-outline">Get App</a>
+          </div>
+          </section>
+          
+         
+
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social" id="social">
+                <a href="https://spotify.com">
+                    <img src="https://getintopc.com/wp-content/uploads/2013/11/spotify-logo-primary-vertical-light-background-rgb.jpg" alt="">
+                </a>
+                <a href="https://youtube.com">
+                    <img src="https://st1.bgr.in/wp-content/uploads/2021/12/Youtube-new-features.jpg" alt="">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/02/Twitter_Logo_new-700x569.png" alt="">
+                </a> 
+                 <a href="https://pinterest.com">
+                    <img src="https://seeklogo.com/images/P/pinterest-badge-logo-82C89A5E42-seeklogo.com.png" alt="">
+                 </a>
+                 <a href="https://instagram.com">
+                    <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-new-logo-vector-download-13.png" alt="">
+                 </a>
+                  
+          
+
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <p> 2021 Starbucks coffee company. All rights reserved</p>
+    </div>
+</footer>
+
+
+   <script src="script.js"></script>
 </body>
 </html>
